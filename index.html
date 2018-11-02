@@ -6,9 +6,9 @@
 	<title>colam</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -19,28 +19,26 @@
 						<a class="navbar-brand" href="#">
 							<img src="images/logo.png" alt="logo">
 						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars"></i>
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto">
+							<ul class="navbar-nav ml-auto">                 
 								<li class="nav-item active">
-									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+									<a class="nav-link" href="#">Các khóa học <span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Link</a>
+									<a class="nav-link" href="#">Lộ trình</a>
 								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Dropdown
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Tin tức</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Cảm nhận của học viên</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Hỗ trợ</a>
 								</li>
 								<li class="nav-item d-flex align-items-center">
 									<div class="search-nav">
@@ -56,7 +54,7 @@
 									</div>
 									<button type="button" class="info-user">
 										<div class="avatar-user">
-											<img src="" alt="">
+											<img src="images/avatar.png" alt="avatar">
 										</div>
 										<div class="name-user">hoanhbc</div>
 										<div class="notification-user">2</div>
@@ -68,7 +66,13 @@
 											<li><a href="">Thoát <i class="fa fa-sign-out"></i></a></li>
 										</ul>
 									</button>
-									<div class="hotline-nav"></div>
+									<div class="hotline-nav">
+										<img src="images/icon-phone.png" alt="icon hotline">
+										<div class="text-hotline">
+											<span>0982 735 392</span>
+											8h - 22h hàng ngày
+										</div>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -76,18 +80,134 @@
 				</div>
 			</header>
 			<section class="banner">
-				<img src="images/slider-1.jpg">
+				<div>
+					<img src="images/slider-1.jpg">
+					<!-- <div class="title-description">
+						<div class="container">
+							<h2 class="title-slider">HỌC TIẾNG NHẬT</h2>
+							<a href="" class="btn-slider ml-3">chưa bao giờ dễ đến thế</a>
+						</div>
+					</div> -->
+				</div>
+				<div>
+					<img src="images/slider-1.jpg">
+					<!-- <div class="title-description">
+						<div class="container">
+							<h2 class="title-slider">HỌC TIẾNG NHẬT</h2>
+							<a href="" class="btn-slider ml-3">chưa bao giờ dễ đến thế</a>
+						</div>
+					</div> -->
+				</div>
+				<div>
+					<img src="images/slider-1.jpg">
+					<!-- <div class="title-description">
+						<div class="container">
+							<h2 class="title-slider">HỌC TIẾNG NHẬT</h2>
+							<a href="" class="btn-slider ml-3">chưa bao giờ dễ đến thế</a>
+						</div>
+					</div> -->
+				</div>
+			</section>
+			<section class="combo-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-7 col-lg-7 d-flex">
+							<div class="thumbnail-img">
+								<img src="images/img-thumbnail-1.png" alt="">
+							</div>
+							<div class="content-combo">
+								<h4 class="title-combo">COMBO N4 + N5</h4>
+								<span class="sale-combo">SALE 30%</span>
+								<div class="info-combo">
+									<div class="item-info-combo">
+										<i><img src="images/icon-hours.png" alt="icon"></i>
+										Thời hạn: 10 tháng
+									</div>
+									<div class="item-info-combo">
+										<i><img src="images/icon-video.png" alt="icon"></i>
+										Video: 150
+									</div>
+									<div class="item-info-combo">
+										<i><img src="images/icon-3code.png" alt="icon"></i>
+										Mã số: CL45N
+									</div>
+									<div class="item-info-combo">
+										<i><img src="images/icon-file.png" alt="icon"></i>
+										Bài test: 50
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5">
+							<div class="price-combo">
+								<div class="sale-price-combo">890.000 vnđ</div>
+								<p class="text-only-price-combo">chỉ còn</p>
+								<div class="after-salce-price-combo">600.000 vnđ</div>
+								<div class="group-btn-combo">
+									<a href="" class="btn btn-more mr-3">XEM CHI TIẾT</a>
+									<a href="" class="btn btn-buy">MUA KHÓA HỌC</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="introduce">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4">
+							<div class="title-introduce">
+								HỌC TIẾNG NHẬT ONLINE
+							</div>
+							<div class="h2">
+								GIỚI THIỆU
+							</div>
+							<p>Lorem ipsum dollor site amet the best  consectuer adipiscing elites sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat insignia the consectuer adipiscing elit. </p>
+							<a href="#" class="btn-classroom mt-5">LỘ TRÌNH HỌC</a>
+						</div>
+						<div class="col-xl-9 col-lg-8">
+							<iframe class="iframe" height="450" src="https://www.youtube.com/embed/yU6BSPNnuWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="courses-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="title-course">
+								<p>Các khóa học online hiện có trên</p>
+								<div class="h4">TIẾNG NHẬT CÔ LAM</div>
+								<div class="checkbox-courses">
+									<label>
+										<input type="checkbox" data-toggle="toggle">
+										<div class="toogle-left-right"></div>
+										<div class="package-toggle">Gói lẻ</div>
+										<div class="combo-toggle">Combo</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	</div>
 
-
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.js-toggle-search').click(function(){
 				$('body').toggleClass('show');
 				$(this).find('i').toggleClass('fa-times');
 			})
+
+			$('.banner').slick({
+				// autoplay: true,
+  		// 		autoplaySpeed: 2000
+			});
 		})
 	</script>
 </body>
